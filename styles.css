@@ -1,47 +1,41 @@
 * {
 	box-sizing: border-box;
 }
-.gg{
+}
+#gg{
 	display:grid;
 	grid-template-areas:
 	"img h2";
 }
 header{
 	background: linear-gradient(45deg, #c5c2da, #cea62e);
+	width:100%;
 }
 header h2{
 	font-size:26pt;
 	color:white;
 	margin-right:10px;
 }
-#hh{
+#distinct_services{
 	display:grid;
 	grid-template-areas:
 	"box box2"
 	"box3 box4";
 }
-#hh section{
+#distinct_services section{
 	margin:20px;
 	box-shadow:2px 2px 6px 6px black;
 }
-#hh h4{
+#distinct_services h4{
 	color:#dcb747;
 }
-#box{
-	border:2px solid green;
+#distinct_services h4 a{
+	text-decoration:none;
+	color:#dcb747;
 }
-#box2{
-	border:2px solid black;
-}
-#box3{
-	border:2px solid black;
-}
-#box4{
-	border:2px solid black;
-}
-#hh img{
-	width:200px;
-	height:auto;
+#distinct_services img{
+	width:400px;
+	height:400px;
 }
 #top-nav{
 	overflow:hidden;
@@ -54,7 +48,8 @@ header img{
 }
 
 #top-nav a{
-	float: left;
+	float:left;
+	border:2px solid green;
 	color: #f2f2f2;
   	text-align: center;
   	padding: 14px 16px;
@@ -70,8 +65,7 @@ header img{
 	background-color:#f0cd63;
 	color:white;
 	text-align:center;
-	height:100px;
-	padding:15px;
+	padding: 40px 0;
 }
 #bottom-nav a{
 	display:block;
@@ -98,3 +92,106 @@ form{
 	margin-right:auto;
 	font-size:26pt;
 }
+#calculatemenu{
+	width:100%;
+	padding: 70px 0;
+	background: linear-gradient(45deg, #c5c2da, #cea62e);
+	color:white;
+	text-align:center;
+	margin:0px;
+	font-size:26pt;
+}
+
+.buttonclick{
+	background-color:#97bf04;
+}
+.previous{
+	background-color:#d9043d;
+}
+#box{
+	display:flex;
+	background-color:#dbd6d6;
+	margin:20px;
+	margin-top:0px;
+	box-shadow: 2px 2px 6px 6px black;
+}
+#image{
+	width:50%;
+	height:600px;
+	margin:20px;
+	border:2px solid black;
+}
+#product_description{
+	margin-top:20px;
+	margin-right:20px;
+	margin-bottom:20px;
+	width:50%;
+	color:white;
+	font-size:26px;
+}
+#serviceheading{
+	text-align:center;
+}
+button{
+	width:25%;
+	float: left;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 17px;
+}
+#buttons{
+	width:100%;
+	border:2px solid green;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1000px){
+	#description{
+		display:block;
+	}
+	#box{
+		display:block;
+		overflow:hidden;
+	}
+	#image{
+		width:100%;
+		margin:0px;
+	}
+	#product_description{
+		width:100%;
+	}
+	#distinct_services{
+		grid-template-areas:
+		"box1"
+		"box2"
+		"box3"
+		"box4";
+			}
+	#distinct_services img{
+		width:100%;
+	}
+	#top-nav{
+		display:block;
+	}
+	#top-nav a{
+		display:block;
+	}
+	#gg{
+		grid-template-areas:
+		"img"
+		"h2";
+	}
+	
+}
+@media screen and (max-width:600px){
+	footer{
+		display:block;
+	}
+}
+

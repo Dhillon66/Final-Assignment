@@ -10,12 +10,15 @@
   <body>
     <header>
       <nav id="top-nav">
-        <a href="home">Home</a>
+        <a href="index.html">Home</a>
         <a href="Services">Services</a>
         <a href="about">About Us</a>
       </nav>
     </header>
     <main>
+      <section id="calculatemenu">
+        <p>Ready To Calculate The Cost For The Work?</p>
+      </section>
       <form name="f6" id="form">
     <label for="work">What work you are looking for?</label>
     <Select name="work" id="work">
@@ -24,14 +27,49 @@
       <option>Plumbing</option>
       <option>Flooring</option>
     </Select><br>
-    <label for="earned">Number of bedrroms?</label>
+    <label for="rooms">Number of bedrroms?</label>
     <Select name="rooms" id="rooms">
-      <option>One Bedroom</option>
-      <option>Two Bedroom</option>
-      <option>Three Bedroom</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
     </Select><br>
-    <label for="earned">Cost for the Work</label>
+        <input type="button" id="calculate" value="Calculate The Cost"><br>
+    <label for="cost">Cost for the Work</label>
     <input type="number" id="cost">
+  </form>
+</main><br>
+<footer>
+  <section id="footer-box1">
+    <p>Transforming spaces and building dreams.Quality craftsmanship designed for your needs.</p>
+  </section>
+  <section id="footer-box2">
+    <h2>Quick Links</h2>
+    <nav id="bottom-nav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About Us</a>
+    </nav>
+  </section>
+  <section id="footer-box3">
+    <h2>Our Services</h2>
+    <ol>
+      <li>Basement Renovations</li>
+      <li>Electrical Work</li>
+      <li>Flooring Installation</li>
+      <li>Plumbing Services</li>
+    </ol>
+  </section>
+  <section id="footer-box3">
+    <h2>Contact Us</h2>
+    <ul>
+      <li>Mobile No. :- 8255582XXX</li>
+      <li>Email Id :- nestupconstructions@gmail.com</li>
+      <li>Address :- XXXX cornerstone XXXX NE,Calgary,AB T3N 2L9</li>
+    </ul>
+  </section>
+</footer>
+<script src="javascript.js"></script>
 
   </body>
   </html>
