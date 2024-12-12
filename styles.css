@@ -1,15 +1,14 @@
 * {
 	box-sizing: border-box;
 }
-}
-#gg{
+.image_title{
 	display:grid;
-	grid-template-areas:
+	grid-template-areas: 
 	"img h2";
+	grid-template-columns: 1fr 1fr;
 }
 header{
 	background: linear-gradient(45deg, #c5c2da, #cea62e);
-	width:100%;
 }
 header h2{
 	font-size:26pt;
@@ -19,8 +18,9 @@ header h2{
 #distinct_services{
 	display:grid;
 	grid-template-areas:
-	"box box2"
+	"box1 box2"
 	"box3 box4";
+	grid-template-columns: 1fr 1fr;
 }
 #distinct_services section{
 	margin:20px;
@@ -34,7 +34,7 @@ header h2{
 	color:#dcb747;
 }
 #distinct_services img{
-	width:400px;
+	width:100%;
 	height:400px;
 }
 #top-nav{
@@ -172,6 +172,7 @@ button{
 		"box2"
 		"box3"
 		"box4";
+		grid-template-columns: 1fr;
 			}
 	#distinct_services img{
 		width:100%;
@@ -182,16 +183,19 @@ button{
 	#top-nav a{
 		display:block;
 	}
-	#gg{
-		grid-template-areas:
-		"img"
-		"h2";
-	}
 	
 }
 @media screen and (max-width:600px){
 	footer{
 		display:block;
+	}
+	.image_title{
+	display:grid;
+	grid-template-areas: 
+	"img" 
+	"h2";
+	grid-template-columns: 1fr;
+	text-align:center;
 	}
 }
 
