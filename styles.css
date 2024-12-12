@@ -150,6 +150,14 @@ button{
 	width:100%;
 	border:2px solid green;
 }
+#about{
+	text-align:center;
+	background-image: url('images/aboutusbgimg.jpg');
+	height:600px;
+	margin-bottom:20px;
+	color:white;
+	font-size:16pt;
+}
 
 
 
