@@ -1,3 +1,9 @@
+body{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 * {
 	box-sizing: border-box;
 }
@@ -151,7 +157,7 @@ button{
 
 
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:900px){
 	#description{
 		display:block;
 	}
@@ -177,17 +183,15 @@ button{
 	#distinct_services img{
 		width:100%;
 	}
-	#top-nav{
-		display:block;
-	}
-	#top-nav a{
-		display:block;
-	}
 	
 }
 @media screen and (max-width:600px){
 	footer{
 		display:block;
+	}
+	footer section{
+		width:100%;
+		border:2px solid white;
 	}
 	.image_title{
 	display:grid;
@@ -196,6 +200,11 @@ button{
 	"h2";
 	grid-template-columns: 1fr;
 	text-align:center;
+	}
+	#top-nav a{
+		display:block;
+		float:none;
+		width:100%;
 	}
 }
 
